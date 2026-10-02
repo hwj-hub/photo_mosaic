@@ -1,0 +1,176 @@
+<!-- ============================================================
+  티스토리 글쓰기 → 우측 상단 "기본모드 ▼" → "HTML" 선택 후 아래 전체를 붙여넣기
+
+  제목 추천 : 사진 모자이크 · 얼굴 자동 모자이크·블러·스티커, 개인정보 가리기 (여러 장 한 번에, 업로드 없이)
+  태그 추천 : 사진모자이크, 얼굴모자이크, 모자이크처리, 블러처리, 사진모자이크사이트, 개인정보가리기, 얼굴가리기, 사진스티커, 캡처모자이크, 사진흐리게
+
+  ※ 본문 마크업은 전부 인라인 스타일이라 티스토리 에디터를 거쳐도 유지됩니다(style·script 태그는 쓰지 않았습니다).
+  ※ 도구 주소는 https://hwj-hub.github.io/photo_mosaic/ 로 미리 넣어 두었습니다(배포 전에는 열리지 않습니다).
+  ※ 대표 이미지는 photo_mosaic_thumbnail.webp(움직이는 썸네일)을 쓰세요. 정지컷이 필요하면 thumbnail-frame.png.
+  ※ 애드센스 승인 뒤에 쓰는 판입니다(도구를 글 안에 끼워 넣음). 심사 기간에는 photo_mosaic_posting.html 을 쓰세요.
+  ※ 도구 안 광고 자리는 iframe 안에서도 뜹니다(도구 설정 iframeOk). 글 본문 광고 3곳에는 도구와 다른 단위 ID를 쓰고, 3곳끼리도 서로 다르게 쓰세요.
+  ※ iframe 높이 1150 = 폭 600 상자(안쪽 580) 실측 — 사진 넣기 칸과 편집 화면이 한 화면에 들어옵니다.
+     사진을 넣으면 도구가 편집 화면으로 스스로 내려가고, 그 아래 가리는 방법 칸까지 보입니다.
+  ※ 본문 사진 5장: photo_mosaic_tistory 폴더. 글 안 「▼ 사진 N 자리」 주석 바로 아래 줄에서
+     기본모드로 바꿔 사진을 넣고, 주석에 적힌 대체 텍스트·설명을 붙여 넣으세요(대체 텍스트는 검색엔진이 읽습니다).
+  ※ 사진과 캡처 속 사람은 도구가 그린 예시 그림이고, 이름·번호는 홍길동·010-0000-0000 같은 가짜 값입니다.
+============================================================ -->
+
+
+<div style="background:linear-gradient(135deg,#140e2c 0%,#3b2596 55%,#8a62ec 100%);border-radius:18px;padding:32px 22px 28px;text-align:center;margin:0 0 22px;"><div style="margin-bottom:14px;"><span style="display:inline-block;background:rgba(255,255,255,0.14);color:#e6defc;font-size:0.95em;font-weight:800;padding:7px 16px;border-radius:10px;"><b>"단체 사진을 올려야 하는데, 다른 사람 얼굴은 가려야 해요"</b></span></div><p style="margin:0;color:#ffffff;font-size:1.95em;font-weight:800;letter-spacing:-1px;">🙈 사진 모자이크</p><p style="margin:10px 0 16px;color:#e6defc;font-size:1em;">얼굴 자동 찾기 · 모자이크 · 흐리게 · 칠하기 · 스티커 · 여러 장 ZIP 저장</p><div><span style="display:inline-block;background:rgba(255,255,255,0.13);color:#ffffff;font-size:0.8em;padding:5px 12px;border-radius:999px;margin:3px;">사진이 서버로 전송되지 않음</span><span style="display:inline-block;background:rgba(255,255,255,0.13);color:#ffffff;font-size:0.8em;padding:5px 12px;border-radius:999px;margin:3px;">정면·옆얼굴 자동 찾기</span><span style="display:inline-block;background:rgba(255,255,255,0.13);color:#ffffff;font-size:0.8em;padding:5px 12px;border-radius:999px;margin:3px;">네 가지 가리는 방법</span><span style="display:inline-block;background:rgba(255,255,255,0.13);color:#ffffff;font-size:0.8em;padding:5px 12px;border-radius:999px;margin:3px;">붓으로 칠하기</span><span style="display:inline-block;background:rgba(255,255,255,0.13);color:#ffffff;font-size:0.8em;padding:5px 12px;border-radius:999px;margin:3px;">한 번에 60장</span><span style="display:inline-block;background:rgba(255,255,255,0.13);color:#ffffff;font-size:0.8em;padding:5px 12px;border-radius:999px;margin:3px;">위치 정보(GPS) 삭제</span><span style="display:inline-block;background:rgba(255,255,255,0.13);color:#ffffff;font-size:0.8em;padding:5px 12px;border-radius:999px;margin:3px;">PC·휴대폰 모두</span></div></div>
+
+
+<p style="line-height:1.8;"><b>사진 모자이크</b>는 사진 속 얼굴을 자동으로 찾아 모자이크·흐리게(블러)·스티커로 가리고, 대화 캡처의 이름·전화번호·주소처럼 글자로 된 개인정보는 끌어서 칠해 지우는 무료 온라인 <b>도구</b>입니다. 설치나 회원가입 없이 브라우저에서 바로 쓸 수 있고, PC와 스마트폰 모두 지원합니다.</p>
+
+<p style="line-height:1.8;">학급 행사 사진을 반 단톡방에 올리거나, 동호회 단체 사진을 블로그에 쓰거나, 중고거래 상대와 나눈 대화를 캡처해 후기로 남길 때마다 같은 고민이 생깁니다. 허락받지 않은 얼굴과 남의 연락처는 가려야 하는데, 모자이크 앱은 설치해야 하고 광고가 많으며, PC 그림판으로는 얼굴 하나하나를 네모로 칠해야 합니다. 사진이 열 장을 넘어가면 그 일만 한참 걸립니다.</p>
+
+<div style="background:#f1eefc;border:1px solid #d9d0f5;border-left:5px solid #8a62ec;border-radius:0 12px 12px 0;padding:14px 18px;margin:14px 0;line-height:1.8;color:#241a4a;">이 도구는 사진을 넣는 순간 <b>정면과 옆얼굴을 찾아 동그랗게 가린 모습</b>을 먼저 보여 줍니다. 빠진 곳은 손가락이나 마우스로 끌어 더하고, 틀린 곳은 눌러서 빼면 끝입니다. 여러 장을 한꺼번에 넣어도 사진마다 따로 찾아 두고, 저장은 한 장씩 또는 ZIP 하나로 합니다. 사진은 내 브라우저 밖으로 나가지 않습니다.</div>
+
+<!-- ▼ 광고 위치 1 : 도구 바로 위
+     이 글의 광고 단위를 넣으면 됩니다. 도구 안 광고와도, 글 안의 광고 자리 3곳끼리는 같은 ID를 쓰지 마세요(한 화면 중복 노출). -->
+
+
+
+
+<div style="max-width:600px;margin:0 auto;">
+  <div style="background:#1c1438;border-radius:18px;padding:10px;box-shadow:0 10px 28px rgba(28,20,56,0.24);">
+    <iframe src="https://hwj-hub.github.io/photo_mosaic/" width="100%" height="1150" style="border:0;border-radius:12px;display:block;background:#f0eff8;" loading="lazy" allowfullscreen title="사진 모자이크 · 얼굴 자동 모자이크·블러·스티커, 개인정보 가리기">
+</iframe>
+  </div>
+  <p style="text-align:center;margin:15px 0 0;">
+    <a href="https://hwj-hub.github.io/photo_mosaic/" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#5b3fd0,#8a62ec);color:#ffffff;font-weight:700;font-size:0.95em;padding:11px 24px;border-radius:999px;text-decoration:none;">🔍 새 창에서 크게 열기</a>
+  </p>
+</div>
+
+
+<p style="text-align:center;font-size:0.85em;color:#3b2d80;margin-top:14px;line-height:1.7;">위 칸에서 「예시 사진으로 해 보기」를 누르면 바로 써 볼 수 있습니다.<br>사진이 많거나 PC라면 새 창으로 여는 편이 편집 화면이 넓습니다(PC에서는 편집 화면과 설정이 나란히 보입니다).</p>
+
+
+<h2 style="margin:44px 0 16px;padding:13px 18px;background:linear-gradient(90deg,#1c1438,#5b3fd0);color:#ffffff;border-left:7px solid #c4b5fd;border-radius:0 14px 14px 0;font-size:1.28em;letter-spacing:-0.5px;">🖐️ 쓰는 법 — 네 단계</h2>
+
+<p style="line-height:1.8;">1. <b>사진을 넣습니다.</b> 「사진 고르기」로 여러 장을 한꺼번에 고르거나, PC라면 파일을 끌어다 놓거나 캡처한 화면을 Ctrl+V로 붙여 넣습니다. 한 번에 60장까지 받습니다.</p>
+
+<p style="line-height:1.8;">2. <b>자동으로 찾은 얼굴을 확인합니다.</b> 넣자마자 얼굴마다 점선 동그라미가 그려지고 그 안이 가려진 모습으로 바뀝니다. 위쪽 사진 목록에는 사진마다 가린 곳의 개수가 적힙니다.</p>
+
+<p style="line-height:1.8;">3. <b>빠진 곳을 더하고 틀린 곳을 뺍니다.</b> 사진 위 빈 곳을 끌면 네모(또는 동그라미)가 생기고, 「붓」으로 바꾸면 문질러 칠할 수 있습니다. 이미 있는 영역을 누르면 옮기거나 모서리로 크기를 바꿀 수 있고, 빨간 ×로 지웁니다. 되돌리기(Ctrl+Z)는 80번까지 됩니다.</p>
+
+<p style="line-height:1.8;">4. <b>가리는 방법을 고르고 저장합니다.</b> 모자이크·흐리게·칠하기·스티커 가운데 고르면 모든 영역이 함께 바뀝니다. 영역 하나를 눌러 둔 채 바꾸면 그 영역만 달라지므로 「얼굴은 모자이크, 번호는 칠하기」처럼 섞을 수 있습니다.</p>
+
+<!-- ▼ 사진 1 자리 — photo_mosaic_tistory/photo_mosaic_tistory_01_pc.png
+     대체 텍스트: 사진 모자이크 PC 화면 — 소풍 단체 사진에서 얼굴 네 개를 자동으로 찾아 모자이크하고, 오른쪽에 가리는 방법과 세기를 고르는 칸
+     설명(캡션): PC에서는 편집 화면 옆에 가리는 방법과 저장 칸이 나란히 보입니다 -->
+
+<div style="background:#f1eefc;border:1px solid #d9d0f5;border-left:5px solid #c4b5fd;border-radius:0 12px 12px 0;padding:14px 18px;margin:14px 0;line-height:1.8;color:#241a4a;"><b>「👁 원본 보기」를 누르고 있으면</b> 가리기 전 사진이 잠깐 보입니다. 손을 떼면 다시 가린 모습으로 돌아오니, 놓친 얼굴이 없는지 원본과 번갈아 보며 확인할 수 있습니다. 점선 테두리는 화면에만 보이고 저장한 사진에는 들어가지 않습니다.</div>
+
+<h2 style="margin:44px 0 16px;padding:13px 18px;background:linear-gradient(90deg,#1c1438,#5b3fd0);color:#ffffff;border-left:7px solid #fbbf24;border-radius:0 14px 14px 0;font-size:1.28em;letter-spacing:-0.5px;">🔍 얼굴은 어떻게 찾나</h2>
+
+<p style="line-height:1.8;">얼굴 찾기는 OpenCV의 얼굴 판별기(정면 얼굴용·옆얼굴용)를 자바스크립트로 옮겨 브라우저에서 직접 계산합니다. 사진을 긴 변 960픽셀로 줄인 뒤, 20×20 크기의 창을 조금씩 키워 가며 사진 전체를 훑고 「눈두덩이 볼보다 어둡고 콧등이 밝은」 얼굴 특유의 명암 모양을 단계별로 걸러 냅니다. 옆얼굴 판별기는 한쪽 방향만 알아서 사진을 좌우로 뒤집어 한 번 더 돌립니다.</p>
+
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;margin:16px 0;"><table style="width:100%;border-collapse:collapse;font-size:0.93em;min-width:520px;"><tr style="background:#1c1438;color:#ffffff;"><th style="padding:9px 10px;text-align:left;border:1px solid #3a2d7a;width:38%;">확인한 것</th><th style="padding:9px 10px;text-align:left;border:1px solid #3a2d7a;width:62%;">결과</th></tr><tr style="background:#f1eefc;"><td style="padding:9px 10px;text-align:left;border:1px solid #d9d0f5;color:#5b3fd0;">파이썬 OpenCV와 같은 답이 나오는가</td><td style="padding:9px 10px;text-align:left;border:1px solid #d9d0f5;color:#241a4a;">시험 사진 6장에서 같은 얼굴을 찾음(상자 위치 차이 1~2픽셀), 얼굴 없는 사진 3장은 둘 다 0개</td></tr><tr style="background:#ffffff;"><td style="padding:9px 10px;text-align:left;border:1px solid #d9d0f5;color:#5b3fd0;">얼굴 84개를 넣은 시험 사진 12장</td><td style="padding:9px 10px;text-align:left;border:1px solid #d9d0f5;color:#241a4a;">78개 찾음, 얼굴이 아닌 곳을 잡은 경우 0개(놓친 6개 중 3개는 한 변 48픽셀 이하의 작은 얼굴)</td></tr><tr style="background:#f1eefc;"><td style="padding:9px 10px;text-align:left;border:1px solid #d9d0f5;color:#5b3fd0;">4032×2520 사진 한 장</td><td style="padding:9px 10px;text-align:left;border:1px solid #d9d0f5;color:#241a4a;">PC에서 얼굴 찾기 0.4초, 원본 크기로 저장 0.4초</td></tr></table></div>
+
+<p style="line-height:1.8;">계산은 화면이 멈추지 않도록 CPU 코어 수에 맞춰 일꾼을 최대 4개까지 나눠 돌립니다. 휴대폰은 PC보다 몇 배 느릴 수 있지만 사진 한 장에 몇 초 안쪽입니다. 단체 사진 뒷줄처럼 얼굴이 아주 작다면 「자동 얼굴 찾기 설정」에서 <b>작은 얼굴까지 찾기</b>를 켜고 다시 찾습니다. 이때는 1600픽셀로 훑어서 2~4배 오래 걸립니다.</p>
+
+<div style="background:#f1eefc;border:1px solid #d9d0f5;border-left:5px solid #fbbf24;border-radius:0 12px 12px 0;padding:14px 18px;margin:14px 0;line-height:1.8;color:#241a4a;"><b>자동 찾기가 놓치기 쉬운 얼굴</b> — 고개를 크게 기울인 얼굴, 마스크·선글라스로 많이 가린 얼굴, 뒤통수, 손으로 가린 얼굴, 아주 어둡거나 역광인 얼굴입니다. 이런 사진은 남은 얼굴을 직접 그려 넣고, 저장하기 전에 꼭 한 번 훑어보세요.</div>
+
+<h2 style="margin:44px 0 16px;padding:13px 18px;background:linear-gradient(90deg,#1c1438,#5b3fd0);color:#ffffff;border-left:7px solid #f472b6;border-radius:0 14px 14px 0;font-size:1.28em;letter-spacing:-0.5px;">🎨 네 가지 가리는 방법</h2>
+
+<!-- ▼ 사진 2 자리 — photo_mosaic_tistory/photo_mosaic_tistory_02_effects.png
+     대체 텍스트: 같은 단체 사진을 모자이크·흐리게(블러)·칠하기·스티커 네 가지로 가린 비교
+     설명(캡션): 같은 사진, 같은 자리를 네 가지 방법으로 가렸습니다 -->
+
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;margin:16px 0;"><table style="width:100%;border-collapse:collapse;font-size:0.93em;min-width:560px;"><tr style="background:#1c1438;color:#ffffff;"><th style="padding:9px 10px;text-align:left;border:1px solid #3a2d7a;width:16%;">방법</th><th style="padding:9px 10px;text-align:left;border:1px solid #3a2d7a;width:52%;">어떻게 가리나</th><th style="padding:9px 10px;text-align:left;border:1px solid #3a2d7a;width:32%;">어울리는 곳</th></tr><tr style="background:#f1eefc;"><td style="padding:9px 10px;text-align:left;border:1px solid #d9d0f5;color:#5b3fd0;">모자이크</td><td style="padding:9px 10px;text-align:left;border:1px solid #d9d0f5;color:#241a4a;">영역을 네모 칸으로 나눠 칸마다 평균 색 하나로 칠합니다. 세기 1~5</td><td style="padding:9px 10px;text-align:left;border:1px solid #d9d0f5;color:#241a4a;">얼굴, 배경 속 사람, 차량 번호판</td></tr><tr style="background:#ffffff;"><td style="padding:9px 10px;text-align:left;border:1px solid #d9d0f5;color:#5b3fd0;">흐리게</td><td style="padding:9px 10px;text-align:left;border:1px solid #d9d0f5;color:#241a4a;">상자 흐림을 세 번 겹쳐 가우시안처럼 번지게 합니다. 세기 1~5</td><td style="padding:9px 10px;text-align:left;border:1px solid #d9d0f5;color:#241a4a;">얼굴을 자연스럽게, 배경 정리</td></tr><tr style="background:#f1eefc;"><td style="padding:9px 10px;text-align:left;border:1px solid #d9d0f5;color:#5b3fd0;">칠하기</td><td style="padding:9px 10px;text-align:left;border:1px solid #d9d0f5;color:#241a4a;">검정·흰색·회색·주변색·직접 고른 색 한 가지로 덮습니다</td><td style="padding:9px 10px;text-align:left;border:1px solid #d9d0f5;color:#241a4a;">이름·전화번호·주소·계좌번호</td></tr><tr style="background:#ffffff;"><td style="padding:9px 10px;text-align:left;border:1px solid #d9d0f5;color:#5b3fd0;">스티커</td><td style="padding:9px 10px;text-align:left;border:1px solid #d9d0f5;color:#241a4a;">그림 문자 12가지 가운데 하나를 얹고, 밑은 한 번 더 강하게 흐립니다</td><td style="padding:9px 10px;text-align:left;border:1px solid #d9d0f5;color:#241a4a;">아이 얼굴, 가볍게 올리는 사진</td></tr></table></div>
+
+<p style="line-height:1.8;">모자이크 칸 크기는 <b>가리는 영역의 짧은 변</b>과 <b>사진 전체 크기</b> 두 가지로 정합니다. 세기 3이라면 영역 짧은 변의 6분의 1, 사진 긴 변의 1.4% 가운데 큰 쪽입니다. 영역 크기만 따르면 글자 한 줄처럼 납작한 영역에서 칸이 몇 픽셀로 작아져 글자가 비쳐 보이기 때문에, 사진 크기에 비례한 최소 칸을 두었습니다. 흐리게도 같은 방식으로 최소 번짐 폭이 있습니다.</p>
+
+<h2 style="margin:44px 0 16px;padding:13px 18px;background:linear-gradient(90deg,#1c1438,#5b3fd0);color:#ffffff;border-left:7px solid #38bdf8;border-radius:0 14px 14px 0;font-size:1.28em;letter-spacing:-0.5px;">🔒 글자는 칠하기로 덮으세요</h2>
+
+<p style="line-height:1.8;">얼굴은 칸이 커지면 누구인지 알아보기 어렵지만, 글자와 숫자는 사정이 다릅니다. 모자이크된 비밀번호 캡처에서 글자를 다시 읽어 내는 공개 도구(Depix 등)가 이미 알려져 있습니다. 글꼴과 칸 크기를 알면 「어떤 글자를 모자이크하면 이런 색 칸이 나오는가」를 하나씩 대어 볼 수 있기 때문입니다. 약하게 흐린 글자도 비슷하게 되살리는 방법이 있습니다.</p>
+
+<!-- ▼ 사진 3 자리 — photo_mosaic_tistory/photo_mosaic_tistory_03_text.png
+     대체 텍스트: 연락처와 주소 두 줄을 원본·모자이크 세기 1·흐리게 세기 2·칠하기로 가린 비교 — 칠하기만 글자 흔적이 남지 않음
+     설명(캡션): 같은 두 줄을 세 가지로 가렸습니다 — 모자이크·흐리게는 글자 모양이 어렴풋이 남습니다 -->
+
+<p style="line-height:1.8;">그래서 이 도구는 모자이크·흐리게 세기를 1~2로 내리면 「글자는 칠하기를 쓰세요」라는 경고를 띄웁니다. <b>칠하기는 원래 화소를 하나도 남기지 않으므로</b> 어떤 방법으로도 되살릴 수 없습니다. 주민등록번호·전화번호·계좌번호·주소·차량 번호처럼 한 글자만 새도 곤란한 정보는 칠하기가 정답입니다.</p>
+
+<h2 style="margin:44px 0 16px;padding:13px 18px;background:linear-gradient(90deg,#1c1438,#5b3fd0);color:#ffffff;border-left:7px solid #34d399;border-radius:0 14px 14px 0;font-size:1.28em;letter-spacing:-0.5px;">💬 대화 캡처의 이름·번호 가리기</h2>
+
+<p style="line-height:1.8;">메신저 캡처에는 얼굴이 없으니 자동 찾기가 할 일이 없습니다. 「칠하기」를 고른 뒤 가릴 글자 위를 끌어 네모를 그리면 됩니다. 글자 줄이 작아 손가락으로 맞추기 어렵다면 두 손가락으로 벌려 크게 본 다음 그리세요. 확대한 채로 그려도 영역은 원본 좌표에 정확히 들어갑니다.</p>
+
+<!-- ▼ 사진 4 자리 — photo_mosaic_tistory/photo_mosaic_tistory_04_capture.png
+     대체 텍스트: 메신저 대화 캡처의 이름·연락처·주소·송장번호·계좌번호를 검은색으로 칠해 가린 전후 비교
+     설명(캡션): 대화방 이름과 말풍선 속 연락처·주소·계좌번호를 모두 칠했습니다 -->
+
+<div style="background:#f1eefc;border:1px solid #d9d0f5;border-left:5px solid #34d399;border-radius:0 12px 12px 0;padding:14px 18px;margin:14px 0;line-height:1.8;color:#241a4a;"><b>흰 바탕 캡처라면 「주변색」</b>을 써 보세요. 영역 바로 바깥 3픽셀 띠의 평균 색으로 칠해서, 검은 막대 대신 원래 바탕과 거의 같은 색으로 글자가 지워집니다. 단, 바탕에 무늬나 그러데이션이 있으면 칠한 자리가 티 나니 그때는 검정이나 회색이 낫습니다.</div>
+
+<!-- ▼ 광고 위치 2 : 본문 중간 -->
+
+
+
+
+<h2 style="margin:44px 0 16px;padding:13px 18px;background:linear-gradient(90deg,#1c1438,#5b3fd0);color:#ffffff;border-left:7px solid #fb923c;border-radius:0 14px 14px 0;font-size:1.28em;letter-spacing:-0.5px;">📱 휴대폰에서 쓸 때</h2>
+
+<!-- ▼ 사진 5 자리 — photo_mosaic_tistory/photo_mosaic_tistory_05_phone.png
+     대체 텍스트: 휴대폰 화면의 사진 모자이크 — 사진 두 장을 넣고 얼굴을 자동으로 가린 편집 화면과, 모자이크·흐리게·칠하기·스티커와 세기를 고르는 칸
+     설명(캡션): 휴대폰에서는 편집 화면 아래로 가리는 방법과 저장 칸이 이어집니다 -->
+
+<p style="line-height:1.8;">휴대폰에서는 편집 화면 위에서 <b>한 손가락은 그리기, 두 손가락은 확대·이동</b>입니다. 그리던 중에 두 번째 손가락을 대면 그리던 네모는 취소되고 확대로 바뀌니 실수로 생긴 영역이 남지 않습니다. 화면을 위아래로 넘길 때는 편집 화면 바깥을 잡고 넘기세요.</p>
+
+<p style="line-height:1.8;">터치 화면에서 공유 기능을 지원하는 브라우저라면 저장 칸에 <b>「사진첩에 저장」</b> 단추가 따로 나옵니다. 누르면 휴대폰 공유 창이 열리고 「이미지 저장」을 고르면 갤러리에 바로 들어갑니다. 아이폰 사파리에서 고른 사진은 HEIC가 아니라 JPG로 바뀌어 들어오므로 형식을 신경 쓰지 않아도 됩니다.</p>
+
+<p style="line-height:1.8;">네이버·카카오톡 앱 안에서 링크를 열면 파일 저장이 막혀 있는 경우가 많습니다. 도구가 시작하기 전에 「크롬에서 열기」(아이폰은 주소 복사 후 사파리) 안내 창을 띄우니, 브라우저를 옮긴 다음 사진을 넣으세요.</p>
+
+<h2 style="margin:44px 0 16px;padding:13px 18px;background:linear-gradient(90deg,#1c1438,#5b3fd0);color:#ffffff;border-left:7px solid #a3e635;border-radius:0 14px 14px 0;font-size:1.28em;letter-spacing:-0.5px;">💡 이럴 때 씁니다</h2>
+
+<h3 style="margin:26px 0 10px;font-size:1.08em;color:#5b3fd0;">1. 학교·유치원 행사 사진</h3>
+
+<p style="line-height:1.8;">학예회·운동회 사진을 반 단톡방이나 블로그에 올릴 때 내 아이 말고 다른 아이들 얼굴을 한 번에 가립니다. 내 아이만 남기려면 그 얼굴의 영역만 눌러 지우면 됩니다.</p>
+
+<h3 style="margin:26px 0 10px;font-size:1.08em;color:#5b3fd0;">2. 동호회·회사 단체 사진</h3>
+
+<p style="line-height:1.8;">공개 블로그나 카페에 올릴 때 얼굴 공개를 원하지 않는 사람만 골라 스티커로 덮습니다. 영역 하나를 눌러 둔 채 스티커를 고르면 그 사람만 바뀝니다.</p>
+
+<h3 style="margin:26px 0 10px;font-size:1.08em;color:#5b3fd0;">3. 중고거래·택배 사진</h3>
+
+<p style="line-height:1.8;">송장의 이름·주소·전화번호, 상자에 붙은 바코드를 칠하기로 지웁니다. 집 안 사진에 찍힌 우편물·현관 번호도 붓으로 문질러 덮을 수 있습니다.</p>
+
+<h3 style="margin:26px 0 10px;font-size:1.08em;color:#5b3fd0;">4. 대화·문자 캡처 후기</h3>
+
+<p style="line-height:1.8;">상대방 이름과 프로필 사진, 계좌번호를 가린 뒤 후기나 제보 글에 씁니다. 여러 장을 넣고 「전부 저장」을 누르면 ZIP 하나로 받습니다.</p>
+
+<h3 style="margin:26px 0 10px;font-size:1.08em;color:#5b3fd0;">5. 블랙박스·거리 사진</h3>
+
+<p style="line-height:1.8;">차량 번호판과 지나가는 사람 얼굴을 모자이크합니다. 번호판은 글자이니 세기 4 이상이나 칠하기를 쓰세요.</p>
+
+<h2 style="margin:44px 0 16px;padding:13px 18px;background:linear-gradient(90deg,#1c1438,#5b3fd0);color:#ffffff;border-left:7px solid #fbbf24;border-radius:0 14px 14px 0;font-size:1.28em;letter-spacing:-0.5px;">❓ 자주 묻는 것</h2>
+
+<p style="line-height:1.8;"><b>Q. 모자이크한 사진을 원래대로 되돌릴 수 있나요?</b><br>저장한 파일의 가린 부분은 되돌릴 수 없습니다. 도구는 원본을 바꾸지 않고 「_모자이크」가 붙은 새 파일을 만들므로, 다시 고치려면 원본을 넣고 처음부터 하면 됩니다. 반대로 남이 올린 모자이크를 벗기는 기능은 없습니다.</p>
+
+<p style="line-height:1.8;"><b>Q. 사진이 서버로 올라가나요?</b><br>올라가지 않습니다. 사진 읽기·얼굴 찾기·가리기·ZIP 묶기가 모두 브라우저 안에서 끝나고, 페이지를 연 뒤에는 인터넷을 끊어도 동작합니다.</p>
+
+<p style="line-height:1.8;"><b>Q. 저장한 사진에 위치 정보가 남나요?</b><br>남지 않습니다. 캔버스에 그린 그림으로 새로 굽기 때문에 원본의 촬영 정보(EXIF) — 찍은 장소의 GPS 좌표, 휴대폰 기종, 찍은 날짜 — 가 모두 빠집니다. 날짜를 남겨야 하는 사진이면 원본을 따로 보관하세요.</p>
+
+<p style="line-height:1.8;"><b>Q. 화질이 떨어지나요?</b><br>「원본 크기」를 고르면 가로세로 픽셀이 그대로이고, JPG는 92% 화질로 다시 저장합니다. 가린 곳 밖은 눈으로 구분하기 어려울 만큼 같습니다. PNG로 저장하면 가린 곳 밖의 픽셀이 원본과 한 점도 다르지 않은 것을 시험으로 확인했습니다.</p>
+
+<p style="line-height:1.8;"><b>Q. 동영상도 되나요?</b><br>사진만 됩니다. 움직이는 얼굴을 따라가며 가리는 동영상 모자이크는 지원하지 않습니다.</p>
+
+<p style="line-height:1.8;"><b>Q. 사진이 너무 커서 저장이 안 돼요.</b><br>아이폰 사파리는 한 그림의 면적이 약 1,670만 화소를 넘으면 그리지 못합니다. 이보다 큰 사진은 도구가 자동으로 그 한도에 맞춰 줄여 저장합니다. 그래도 실패하면 크기를 「긴 변 2048」로 바꿔 보세요.</p>
+
+<h2 style="margin:44px 0 16px;padding:13px 18px;background:linear-gradient(90deg,#1c1438,#5b3fd0);color:#ffffff;border-left:7px solid #c4b5fd;border-radius:0 14px 14px 0;font-size:1.28em;letter-spacing:-0.5px;">🔗 같이 보면 좋은 도구</h2>
+
+<div style="text-align:center;margin:10px 0 20px;">
+<a href="https://hwj-hub.github.io/id_photo/" target="_blank" rel="noopener" style="display:inline-block;background:#f1eefc;border:1px solid #d9d0f5;color:#5b3fd0;font-size:0.9em;font-weight:700;padding:7px 14px;border-radius:999px;margin:4px;text-decoration:none;">🪪 증명사진 만들기(여권·반명함 규격)</a>
+<a href="https://hwj-hub.github.io/watermark/" target="_blank" rel="noopener" style="display:inline-block;background:#f1eefc;border:1px solid #d9d0f5;color:#5b3fd0;font-size:0.9em;font-weight:700;padding:7px 14px;border-radius:999px;margin:4px;text-decoration:none;">💧 워터마크 넣기(사진·PDF)</a>
+<a href="https://hwj-hub.github.io/image_compressor/" target="_blank" rel="noopener" style="display:inline-block;background:#f1eefc;border:1px solid #d9d0f5;color:#5b3fd0;font-size:0.9em;font-weight:700;padding:7px 14px;border-radius:999px;margin:4px;text-decoration:none;">🗜️ 사진 용량 줄이기</a>
+<a href="https://hwj-hub.github.io/bg_remove/" target="_blank" rel="noopener" style="display:inline-block;background:#f1eefc;border:1px solid #d9d0f5;color:#5b3fd0;font-size:0.9em;font-weight:700;padding:7px 14px;border-radius:999px;margin:4px;text-decoration:none;">✂️ 배경 제거·누끼 따기</a>
+</div>
+
+
+<!-- ▼ 광고 위치 3 : 마무리 위 -->
+
+
+
+
+<div style="background:#f1eefc;border:1px solid #d9d0f5;border-radius:14px;padding:16px 18px;margin:26px 0;line-height:1.8;color:#241a4a;font-size:0.95em;"><b>⚠️ 사진을 공개하기 전에 확인하세요</b><br>· 자동 찾기는 <b>모든 얼굴을 찾는다고 보장하지 않습니다.</b> 놓친 얼굴·이름표·번호가 없는지 저장한 사진을 직접 열어 확인하세요. 한번 공개한 사진은 되돌리기 어렵습니다.<br>· 주민등록번호·전화번호·계좌번호·주소는 모자이크·흐리게가 아니라 <b>칠하기</b>로 덮으세요.<br>· 얼굴을 가려도 옷차림·배경·이름표로 누구인지 알 수 있습니다. 다른 사람이 나온 사진을 공개할 때는 그 사람의 동의를 받는 것이 원칙입니다.<br>· 저장한 사진에는 촬영 날짜·위치 정보가 남지 않으니 필요하면 원본을 따로 보관하세요.<br>· 이 도구는 있는 그대로 제공되며, 가리지 못한 정보의 노출이나 초상권 분쟁 등 이를 사용해 생긴 손해에 대해 <b>제작자와 운영자는 법적 책임을 지지 않습니다.</b></div>
+
+
+<div style="background:linear-gradient(135deg,#140e2c,#3b2596);border-radius:16px;padding:24px 20px;text-align:center;color:#ffffff;margin:30px 0 10px;"><p style="margin:0 0 8px;font-size:1.2em;font-weight:800;">얼굴은 알아서, 번호는 칠해서</p><p style="margin:0 0 16px;color:#e6defc;font-size:0.95em;line-height:1.7;">사진을 넣으면 얼굴부터 가려 보여 줍니다.<br>사진은 어디에도 올라가지 않습니다.</p><a href="https://hwj-hub.github.io/photo_mosaic/" target="_blank" rel="noopener" style="display:inline-block;background:#ffffff;color:#5b3fd0;font-weight:800;font-size:1.02em;padding:13px 30px;border-radius:999px;text-decoration:none;">🙈 사진 모자이크 열기</a></div>
